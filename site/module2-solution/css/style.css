@@ -1,32 +1,68 @@
 /* Role model: https://siddartha19.github.io/Coursera-HTML-CSS-and-JavaScript-for-Web-Developers/Assignments/module-2/index.html */
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 h1 {
     color: red;
     text-align: center;
-    margin-bottom: 15px;
-}
-.row 
-{
-    width: 100%;
+    margin-bottom: 50px;
+    font-size: 50px;
 }
 
-section {
-    position: relative;
-    background-color: gray;
+.name1 {
+    color: black;
+    background-color: palevioletred;
+}
+
+.name2 {
+    color: white;
+    background-color: red;
+}
+
+.name3 {
+    color: black;
+    background-color: peru;
+}
+
+.content-name {
+    overflow: none;
     border: 5px solid black;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pHeader 
-{
+    text-align: center;
+    padding: 5px;
     position: relative;
     float: right;
-    top: 0px;
+    width: 30%;
+    height: 40px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.content {
+    overflow: none;
+    padding: 15px;
+    clear: right;
     border: 5px solid black;
-    width: 20%;
-    /*padding: 2px;*/
-    text-align: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: gray;
+}
+
+
+section {
+    width: 100%;
+    overflow: none;
 }
 
 @media (min-width: 992px)
@@ -80,6 +116,14 @@ section {
     .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
     }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px)
@@ -87,6 +131,10 @@ section {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
     .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left;
+    }
+
+    .col-sm-12 {
+        width: 100%;
     }
     
 }
