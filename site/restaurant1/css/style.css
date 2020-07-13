@@ -4,3 +4,7 @@ body {
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
 }
+
+.navbar-light {
+    background-color: #f6b319;
+}
